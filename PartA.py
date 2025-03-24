@@ -75,7 +75,7 @@ class Doctor(Staff):
             print("Years of Experience entered is invalid")
 
 staff1 = Staff("Steven Smith", "04/12/1988", "Male", "12345", "53 Waterville Terrace")
-doctor1 = Doctor("Sandra Johnson", "17/05/1993", "Female", "90152", "4 Ballentree Lodge", "Cardiology", "21", "€123,000")
+doctor1 = Doctor("Sandra Johnson", "17/05/1993", "Female", "90152", "4 Ballentree Lodge", "Cardiology", "€123,000", "21")
 
 print("\nStaff:")
 staff1.print_init_attributes()
