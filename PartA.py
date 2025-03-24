@@ -42,3 +42,34 @@ class Staff:
                 self.address = new_address
             else:
                 print("Address entered is invalid")
+
+class Doctor(Staff):
+    def __init__(self, name, DoB, sex, staffID, address, specialisation, salary, years_experience):
+        super().__init__(name, DoB, sex, staffID, address)
+        self.specialisation = specialisation
+        self.salary = salary
+        self.years_experience = years_experience
+
+    def print_attributes(self):
+        super().print_attributes()
+        print(f"Specialisation: {self.specialisation}")
+        print(f"Salary: {self.salary}")
+        print(f"Years of Experience: {self.years_experience}")
+
+    def update_specialisation(self, new_specialisation):
+        if isinstance(new_specialisation, str):
+            self.specialisation = new_specialisation
+        else:
+            print("Specialisation entered is invalid")
+    
+    def update_salary(self, new_salary):
+        if isinstance(new_salary, str):
+            self.salary = new_salary
+        else:
+            print("Salary entered is invalid")
+
+    def update_years_experience(self, new_years_experience):
+        if isinstance(new_years_experience, str):
+            self.years_experience = new_years_experience
+        else:
+            print("Years of Experience entered is invalid")
