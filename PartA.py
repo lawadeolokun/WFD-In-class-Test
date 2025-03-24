@@ -63,13 +63,13 @@ class Doctor(Staff):
             print("Specialisation entered is invalid")
     
     def update_salary(self, new_salary):
-        if isinstance(new_salary, str):
+        if isinstance(new_salary, (int, float)):
             self.salary = new_salary
         else:
             print("Salary entered is invalid")
 
     def update_years_experience(self, new_years_experience):
-        if isinstance(new_years_experience, str):
+        if isinstance(new_years_experience, (int, float)):
             self.years_experience = new_years_experience
         else:
             print("Years of Experience entered is invalid")
